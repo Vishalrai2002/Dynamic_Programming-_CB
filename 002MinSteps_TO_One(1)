@@ -50,10 +50,12 @@ int minSteps(int n) {
 
 int minStepsBottomUp(int n) {
 
+// created a dp vector of size n+1
 	vector<int> dp(n+1); // 0th index is reserved
 
-	dp[1] = 0;
+	dp[1] = 0; // base case
 
+// we need a loop which is starting from 2
 	for(int i=2; i<=n; i++) {
 		int a = INT_MAX;
 		if(i%2 == 0) {
@@ -67,7 +69,7 @@ int minStepsBottomUp(int n) {
 		dp[i] = 1 + min(a, min(b, c));
 	}
 
-	return dp[n];
+	return dp[n]; // because our final answer is stored in n which is at last
 
 }
 
