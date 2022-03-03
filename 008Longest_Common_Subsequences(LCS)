@@ -11,6 +11,7 @@ A common subsequence of two strings is a subsequence that is common to both stri
 
 Example :
 
+
 	Input : s1 = "ABCDGH", s2 = "AEDFHR"
 	Output: 3
 	Explanation : "ADH" is the LCS between s1 and s2
